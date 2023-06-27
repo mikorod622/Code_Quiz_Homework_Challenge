@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <button id="highscoreButton" onclick="submittedInitials()">View Highscores</button>
+      <h3 id="countdown"></h3>
+    </header>
+    <div id="hideStart" class="start">
+      <button onclick="startQuiz()">Start Quiz</button>    
+    </div>
+    <main id="questions">
+      <div class="question-wrap">
+        <h1 id="question-output" class="text-center"></h1>
+        <div id="choiceSelect" class="choices">
+        </div>
+      </div>
+    </main>
+    <h2 id="checker"></h2><div id="line"></div>
+    <div id="gameOver">
+      <h1>Game Over</h1>
+      <p id="user-initials"></p>
+      <input id="initial-input" type="text" placeholder="Enter Your Initials" required minlength="1" maxlength="3">
+      <button id="add-btn" class="mb-big" onclick="submittedInitials()">Submit</button>
+    </div>
+    <div id="highscores" class="">
+      <h1>----HIGHSCORES----</h1>
+      <h1 id="initial-output"></h1>
+    </div>
+  <script src="js/questions.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

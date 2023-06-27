@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background-color: #3c2ab0;
+    padding: 20px 1%;
+}
+
+main h1{
+    padding: 10px
+}
+
+button, header h3{
+    border: none;
+    background-color: rgb(230, 215, 255);
+    color: #3c2ab0;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.choices button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 5%;
+}
+
+.choices button:hover, header button:hover , button:hover{
+    background-color: #eaedff;
+}
+
+#hideStart{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#hideStart button{
+    font-size: 30px;
+}
+
+main, #gameOver {
+    background-color: #d0d7ff;
+    padding: 2%;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+#checker {
+    position: absolute;
+    color: #dccaff;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+}
+
+#line {
+    position: inherit;
+    display: flex;
+    flex: 1;
+    height: 5px;
+    background-color: #dccaff;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+}
+
+#highscores {
+    background-color: #d0d7ff;
+    padding: 2%;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+#initial-output {
+    color: #3c2ab0;
+    size: 10px;
+}
